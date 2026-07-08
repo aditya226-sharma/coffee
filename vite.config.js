@@ -6,7 +6,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig(({ command }) => {
   return {
     plugins: [react(), tailwindcss()],
-    base: command === "build" ? "/coffee/" : "/",
+    base: process.env.GITHUB_ACTIONS === "true" ? "/coffee/" : "/",
     server: {
       port: 5175,
     },
