@@ -1,1 +1,3 @@
-COFFE WEBSITE
+# coffee
+
+Project repository.
